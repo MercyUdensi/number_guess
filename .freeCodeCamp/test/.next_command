@@ -1,0 +1,340 @@
+psql --username=freecodecamp --dbname=postgres
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+mkdir number_guessing_game
+cd number_guessing_game
+touch number_guess.sh
+git init
+chmod +x number_guess.sh
+git add .
+git commit -m "Initial commit"
+git add .
+git commit -m "feat: add functionality to generate random number"
+git add .
+git commit -m "fix: handle invalid input for non-integer guesses"
+__vsc_prompt_cmd_original
+git commit -m "feat: update user logic"
+git add .
+git commit -m "feat: update user logic"
+git add .
+git commit -m "refactor: update user"
+git commit -m "refactor: update user"
+git add .
+git commit -m "refactor: update user"
+git branch
+git branch -m master main
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+./number_guess.sh
+git add .
+git commit -m "chore: update username on the fly"
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+cd ../
+pg_dump -cC --inserts -U freecodecamp number_guess > number_guess.sql
+git init
+git add .
+git commit -m "dump"
+git branch -M main
+git remote add origin https://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@github.com/MercyUdensi/number_guess.git
+git remote set-url origin https://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@github.com/MercyUdensi/number_guess.git
+git push -u origin main
+git push --force origin main
+git rm --cached number_guessing_game
+rm -rf number_guessing_game/.git
+git add .
+git commit -m "Fix: remove submodule and re-add directory"
+git push --force origin main
+git branch
+git init
+git add .
+git commit -m "fix: module"
+git branch -M main
+git remote add origin https://github.com/MercyUdensi/number_guess.git
+git remote -v
+git rm --cached number_guessing_game
+git rm --cached -r number_guessing_game
+rm -rf number_guessing_game/.git
+git add .
+git commit -m "Fix: remove submodule, re-add folder as regular directory"
+git push --force origin main
+git gc --prune=now
+git push --force origin main
+git remote set-url origin https://github.com/MercyUdensi/number_guess.git
+git push -u origin main
+git config --global credential.helper cache
+git push -u origin main
+git remote add origin https://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@github.com/MercyUdensi/number_guess.git
+git remote remove origin
+git remote add origin https://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@github.com/MercyUdensi/number_guess.git
+git remote -v
+git push -u origin main
+git fsck
+git gc
+git push -u origin main
+git push -u origin main --force
+git remote -v
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+cd ../
+git init
+git add .
+git commit -m "updating dump"
+git branch -M main
+git remote add origin https://github.com/MercyUdensi/number_guess.sql.git
+git remote -v
+__vsc_prompt_cmd_original
+git remote remove origin
+git remote -v
+git remote add origin https://github.com/MercyUdensi/number_guess.sql.git
+git remote -v
+git push -u origin main
+git push -u origin main
+git push -u origin main
+git push -u origin main
+git push
+git push -u origin main
+git push -u origin main
+git push -u origin main
+git push -u origin main
+git push -u origin main
+git gc --prune=now
+git push -u origin main
+git gc --prune=now
+git push --force origin main
+git remote -v
+git push -u origin main
+git remove origin
+git remote remove origin
+git push -u origin main
+git remote -v
+git push --force origin main
+git push --force coderoad main
+git remote rename coderoad origin
+git push --force origin main
+git remote add origin https://github.com/MercyUdensi/number_guess.git
+git remote remove origin
+git remote add origin https://github.com/MercyUdensi/number_guess.git
+git remote -v
+git push -u origin main
+git remote remove origin
+git remote add origin https://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@github.com/MercyUdensi/number_guess.git
+git push -u origin main
+git remote remove origin
+git remote remove origin
+git remote add origin https://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@github.com/MercyUdensi/number_guess.git
+git push -u origin main
+git branch
+git checkout -b new-main
+git push -u origin new-main
+clear
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/MercyUdensi/number_guess.git
+git remote add origin https://github.com/MercyUdensi/number_guess.sql.git
+git push -f origin main
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/MercyUdensi/number_guess.git
+git remote add origin https://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@github.com/MercyUdensi/number_guess.git
+git remote remove origin
+git remote add origin https://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@github.com/MercyUdensi/number_guess.git
+git push -u origin main
+pg_dump -cC --inserts -U freecodecamp number_guess > number_guess.sql
+clear
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/MercyUdensi/number_guess.git
+git remote -v
+git remote set-url add origin https://github.com/MercyUdensi/number_guess.git
+git remote set-url origin https://github.com/MercyUdensi/number_guess.git
+git push -u origin main
+cd number_guessing_game
+rm -rf .git
+cd ../
+rm -rf .git
+git init
+git add .
+git commit -m "feat: psql dump"
+git branch -M main
+git remote add origin https://github.com/MercyUdensi/number_guess.git
+git push -u origin main
+git reset --soft HEAD~1
+git add .
+git commit -m "Removed sensitive data from commit"
+git push --force origin main
+__vsc_prompt_cmd_original
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch .freeCodeCamp/test/.next_command" --prune-empty --tag-name-filter cat -- --all
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch .freeCodeCamp/test/.next_command" --prune-empty --tag-name-filter cat -- --all
+__vsc_prompt_cmd_original
+git status
+git add .
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch .freeCodeCamp/test/.next_command" --prune-empty --tag-name-filter cat -- --all
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+psql -U postgres < number_guess.sql
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+camper: /project$ psql -U postgres < number_guess.sql
+cls
+clear
+psql -U postgres < number_guess.sql
+clear
+git status
+git add .freeCodeCamp/test/.cwd .freeCodeCamp/test/.next_command
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch .freeCodeCamp/test/.next_command" --prune-empty --tag-name-filter cat -- --all
+rm -rf .git
+git init
+git add .
